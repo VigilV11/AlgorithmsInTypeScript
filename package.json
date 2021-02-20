@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node ./out/index.js"
+    "dev": "watch 'npm run start' src",
+    "start": "func() { tsc && node ./out/index.js; }; func"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "watch": "^1.0.2"
+  }
 }
